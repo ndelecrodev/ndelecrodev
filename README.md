@@ -1,11 +1,11 @@
 <h1 align="center">Hi, I'm Nicolas Delecrode Zampieri <img src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Hi.gif" width="30px" height="30px" alt="Acenando"></h1>
 
 <p align="center">
-  Desenvolvedor de software · Python, Java e backend · São Paulo, SP
+  Desenvolvedor de software · Python, FastAPI, Django e Java · São Paulo, SP
 </p>
 
 <p align="center">
-  Desenvolvo pipelines de integração, APIs e aplicações web com arquitetura em camadas,<br>
+  Desenvolvo APIs, pipelines de integração e aplicações web com arquitetura em camadas,<br>
   validação de dados e testes automatizados. Aberto a conversas e oportunidades em diferentes áreas.
 </p>
 
@@ -24,7 +24,7 @@
 
 **Ferramentas e plataformas**
 
-<img src="https://skillicons.dev/icons?i=git,github,githubactions,cloudflare,spring,maven,vscode&theme=dark" alt="Ferramentas"/>
+<img src="https://skillicons.dev/icons?i=fastapi,django,spring,git,github,githubactions,cloudflare,maven,vscode&theme=dark" alt="Ferramentas"/>
 
 <sub>Também: Pydantic, SQLAlchemy, pytest, Poetry, MkDocs, Codecov, Sentry, Better Stack, Backblaze B2, Power Automate e Excel.</sub>
 
@@ -66,10 +66,10 @@
 
 ## Foco atual
 
+- APIs e aplicações web com FastAPI e Django
 - Arquitetura em camadas, testes e integração com APIs em Python
 - Java e Spring Boot
 - GitHub Foundations (DataCamp)
-- Inglês (A2, em evolução)
 
 ## Contato
 
