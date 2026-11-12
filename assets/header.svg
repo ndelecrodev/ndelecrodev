@@ -39,7 +39,7 @@
   </g>
   <g font-family="'Segoe UI',-apple-system,Helvetica,Arial,sans-serif" text-anchor="middle">
     <g class="rise">
-      <text x="388" y="84" font-size="22" fill="#c9d9f5" textLength="124" lengthAdjust="spacingAndGlyphs" text-anchor="start">Olá, eu sou</text>
+      <text x="388" y="84" font-size="22" fill="#c9d9f5" textLength="124" lengthAdjust="spacingAndGlyphs" text-anchor="start">Hi, I'm</text>
     </g>
     <text class="hand" x="520" y="86" font-size="24" text-anchor="start" font-family="'Apple Color Emoji','Segoe UI Emoji','Noto Color Emoji',sans-serif">👋</text>
     <text class="rise" x="450" y="134" font-size="46" font-weight="700" fill="url(#name)" textLength="720" lengthAdjust="spacingAndGlyphs">Nicolas Delecrode Zampieri</text>
