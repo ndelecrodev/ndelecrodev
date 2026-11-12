@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="90" viewBox="0 0 900 90" preserveAspectRatio="none" role="img" aria-label="Ondas animadas">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2f6feb"/>
+      <stop offset="1" stop-color="#8957e5"/>
+    </linearGradient>
+  </defs>
+  <g fill="url(#g)">
+    <path opacity="0.25" d="M0 40 Q112 10 225 40 T450 40 T675 40 T900 40 T1125 40 T1350 40 V90 H0 Z">
+      <animateTransform attributeName="transform" type="translate" from="0 0" to="-450 0" dur="14s" repeatCount="indefinite"/>
+    </path>
+    <path opacity="0.45" d="M0 52 Q112 28 225 52 T450 52 T675 52 T900 52 T1125 52 T1350 52 V90 H0 Z">
+      <animateTransform attributeName="transform" type="translate" from="-450 0" to="0 0" dur="10s" repeatCount="indefinite"/>
+    </path>
+    <path opacity="0.9" d="M0 64 Q112 46 225 64 T450 64 T675 64 T900 64 T1125 64 T1350 64 V90 H0 Z">
+      <animateTransform attributeName="transform" type="translate" from="0 0" to="-450 0" dur="7s" repeatCount="indefinite"/>
+    </path>
+  </g>
+</svg>

@@ -1,7 +1,11 @@
-<h1 align="center">Hi, I'm Nicolas Delecrode Zampieri <img src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Hi.gif" width="30px" height="30px" alt="Acenando"></h1>
+<h1 align="center">Nicolas Delecrode Zampieri <img src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Hi.gif" width="30px" height="30px" alt="Acenando"></h1>
 
 <p align="center">
-  Desenvolvedor de software · Python, FastAPI, Django e Java · São Paulo, SP
+  Desenvolvedor de software · São Paulo, SP
+</p>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ndelecrodev/ndelecrodev/main/assets/typing.svg" alt="Python, FastAPI, Django, APIs REST, integrações, Java e Spring Boot"/>
 </p>
 
 <p align="center">
@@ -65,6 +69,13 @@
   <img src="https://streak-stats.demolab.com/?user=ndelecrodev&theme=tokyonight&hide_border=true" alt="Sequência de contribuições"/>
 </p>
 
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ndelecrodev/ndelecrodev/output/github-snake-dark.svg"/>
+    <img src="https://raw.githubusercontent.com/ndelecrodev/ndelecrodev/output/github-snake.svg" alt="Cobrinha comendo as contribuições"/>
+  </picture>
+</p>
+
 ---
 
 ## Foco atual
@@ -77,3 +88,5 @@
 ## Contato
 
 <a href="https://github.com/ndelecrodev"><img src="https://img.shields.io/badge/GitHub-ndelecrodev-181717?style=for-the-badge&logo=github" alt="GitHub"/></a>
+
+<img src="https://raw.githubusercontent.com/ndelecrodev/ndelecrodev/main/assets/waves.svg" width="100%" alt=""/>
