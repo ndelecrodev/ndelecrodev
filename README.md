@@ -18,6 +18,10 @@
   <img src="https://img.shields.io/github/followers/ndelecrodev?style=flat-square&logo=github&label=Seguidores" alt="Seguidores"/>
 </p>
 
+<p align="center">
+  <a href="https://ndelecrodev.github.io/curriculum_website/"><img src="https://img.shields.io/badge/Currículo%20online-ver%20site-2f6feb?style=for-the-badge" alt="Currículo online"/></a>
+</p>
+
 <!-- Os cartões ficam no topo de propósito: a animação deles toca uma vez, quando a imagem carrega.
      Se ficassem lá embaixo na página, ela terminaria antes de alguém rolar até eles. -->
 <p align="center">
