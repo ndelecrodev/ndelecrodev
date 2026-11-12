@@ -18,6 +18,17 @@
   <img src="https://img.shields.io/github/followers/ndelecrodev?style=flat-square&logo=github&label=Seguidores" alt="Seguidores"/>
 </p>
 
+<!-- Os cartões ficam no topo de propósito: a animação deles toca uma vez, quando a imagem carrega.
+     Se ficassem lá embaixo na página, ela terminaria antes de alguém rolar até eles. -->
+<p align="center">
+  <img height="170" src="https://github-readme-stats-eight-theta.vercel.app/api?username=ndelecrodev&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true" alt="Estatísticas"/>
+  <img height="170" src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=ndelecrodev&layout=compact&langs_count=8&theme=tokyonight&hide_border=true" alt="Linguagens mais usadas"/>
+</p>
+
+<p align="center">
+  <img src="https://streak-stats.demolab.com/?user=ndelecrodev&theme=tokyonight&hide_border=true" alt="Sequência de contribuições"/>
+</p>
+
 ---
 
 ## Stack
@@ -43,7 +54,6 @@
 | [**quimia-dashboard**](https://github.com/ndelecrodev/quimia-dashboard) | Dashboard estático com login e controle de acesso por Row Level Security, para acompanhar tarefas e horas do time. Exporta CSV e XLSX. | JavaScript, Chart.js, Cloudflare Pages |
 | [**quimia-web-crud**](https://github.com/Quimia-br/quimia-web-crud) | Painel administrativo do Quimia, com auditoria, restauração de exclusões e mais de 160 testes. Projeto em equipe, ExpoTech 2026. | Java, Spring Boot, Spring Security, PostgreSQL |
 | [**quimia-landingpage**](https://github.com/Quimia-br/quimia-landingpage) | Site institucional do Quimia, responsivo e acessível, publicado em [quimia.tech](https://quimia.tech). Projeto em equipe, ExpoTech 2026. | HTML, CSS, JavaScript, GitHub Pages |
-| [**fisica_projeto**](https://github.com/ndelecrodev/fisica_projeto) | Calculadora e visualizador de MRU/MRUV, com gráficos de posição, velocidade e aceleração. | Python, CustomTkinter, Matplotlib, NumPy |
 
 ---
 
@@ -58,16 +68,7 @@
 
 ---
 
-## Atividade no GitHub
-
-<p align="center">
-  <img height="170" src="https://github-readme-stats-eight-theta.vercel.app/api?username=ndelecrodev&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true" alt="Estatísticas"/>
-  <img height="170" src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=ndelecrodev&layout=compact&langs_count=8&theme=tokyonight&hide_border=true" alt="Linguagens mais usadas"/>
-</p>
-
-<p align="center">
-  <img src="https://streak-stats.demolab.com/?user=ndelecrodev&theme=tokyonight&hide_border=true" alt="Sequência de contribuições"/>
-</p>
+## Atividade
 
 <p align="center">
   <picture>
