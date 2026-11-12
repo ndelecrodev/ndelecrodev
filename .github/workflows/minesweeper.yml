@@ -1,4 +1,4 @@
-name: Gerar animação da cobrinha
+name: Campo minado
 
 on:
   schedule:
@@ -6,22 +6,24 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
+    paths:
+      - scripts/minesweeper.py
+      - .github/workflows/minesweeper.yml
 
 permissions:
   contents: write
 
 jobs:
-  generate:
+  gerar:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 5
     steps:
-      - name: Gerar SVGs a partir das contribuições
-        uses: Platane/snk/svg-only@v3
-        with:
-          github_user_name: ${{ github.repository_owner }}
-          outputs: |
-            dist/github-snake.svg
-            dist/github-snake-dark.svg?palette=github-dark
+      - uses: actions/checkout@v4
+
+      - name: Gerar campo minado
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 scripts/minesweeper.py "${{ github.repository_owner }}" dist
 
       - name: Publicar na branch output
         uses: crazy-max/ghaction-github-pages@v3.1.0

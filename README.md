@@ -89,8 +89,8 @@ Desenvolvo APIs, pipelines de integração e aplicações web com arquitetura em
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ndelecrodev/ndelecrodev/output/github-snake-dark.svg"/>
-    <img width="98%" src="https://raw.githubusercontent.com/ndelecrodev/ndelecrodev/output/github-snake.svg" alt="Cobrinha comendo as contribuições"/>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ndelecrodev/ndelecrodev/output/minesweeper-dark.svg"/>
+    <img width="98%" src="https://raw.githubusercontent.com/ndelecrodev/ndelecrodev/output/minesweeper.svg" alt="Campo minado montado com as contribuições do último ano"/>
   </picture>
 </p>
 
