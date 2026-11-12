@@ -1,15 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="720" height="44" viewBox="0 0 720 44" role="img" aria-label="Python, FastAPI e Django. APIs REST e integrações. Java e Spring Boot.">
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="30" viewBox="0 0 720 30" role="img" aria-label="Python, FastAPI e Django. APIs REST e integrações. Java e Spring Boot.">
   <style>
-    text { font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace; font-size: 20px; fill: #2f6feb; text-anchor: middle; opacity: 0; }
+    text { font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace; font-size: 18px; fill: #0969da; text-anchor: middle; opacity: 0; }
+    @media (prefers-color-scheme: dark) { text { fill: #58a6ff; } }
     .a { animation: fa 12s infinite; }
     .b { animation: fb 12s infinite; }
     .c { animation: fc 12s infinite; }
-    @keyframes fa { 0% { opacity: 0; transform: translateY(8px); } 4% { opacity: 1; transform: translateY(0); } 29% { opacity: 1; transform: translateY(0); } 33%, 100% { opacity: 0; transform: translateY(-6px); } }
-    @keyframes fb { 0%, 33% { opacity: 0; transform: translateY(8px); } 37% { opacity: 1; transform: translateY(0); } 62% { opacity: 1; transform: translateY(0); } 66%, 100% { opacity: 0; transform: translateY(-6px); } }
-    @keyframes fc { 0%, 66% { opacity: 0; transform: translateY(8px); } 70% { opacity: 1; transform: translateY(0); } 95% { opacity: 1; transform: translateY(0); } 99%, 100% { opacity: 0; transform: translateY(-6px); } }
+    @keyframes fa { 0% { opacity: 0; transform: translateY(6px); } 4% { opacity: 1; transform: translateY(0); } 29% { opacity: 1; transform: translateY(0); } 33%, 100% { opacity: 0; transform: translateY(-5px); } }
+    @keyframes fb { 0%, 33% { opacity: 0; transform: translateY(6px); } 37% { opacity: 1; transform: translateY(0); } 62% { opacity: 1; transform: translateY(0); } 66%, 100% { opacity: 0; transform: translateY(-5px); } }
+    @keyframes fc { 0%, 66% { opacity: 0; transform: translateY(6px); } 70% { opacity: 1; transform: translateY(0); } 95% { opacity: 1; transform: translateY(0); } 99%, 100% { opacity: 0; transform: translateY(-5px); } }
     @media (prefers-reduced-motion: reduce) { .a, .b, .c { animation: none; } .a { opacity: 1; } }
   </style>
-  <text class="a" x="360" y="29">Python · FastAPI · Django</text>
-  <text class="b" x="360" y="29">APIs REST e integrações</text>
-  <text class="c" x="360" y="29">Java · Spring Boot · PostgreSQL</text>
+  <text class="a" x="360" y="21">Python · FastAPI · Django</text>
+  <text class="b" x="360" y="21">APIs REST e integrações</text>
+  <text class="c" x="360" y="21">Java · Spring Boot · PostgreSQL</text>
 </svg>
