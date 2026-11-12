@@ -1,4 +1,4 @@
-<h1 align="center">Hi, I'm Nicolas Delecrode Zampieri <img src="https://raw.githubusercontent.com/ndelecrodev/ndelecrodev/main/assets/wave.svg" width="30" height="30" alt=""></h1>
+<h1 align="center">Hi, I'm Nicolas Delecrode Zampieri <img src="https://raw.githubusercontent.com/ndelecrodev/ndelecrodev/main/assets/wave.svg" width="47" height="40" alt=""></h1>
 
 <p align="center"><b>Desenvolvedor de software</b> · São Paulo, SP</p>
 
@@ -26,6 +26,11 @@
   <img width="98%" src="https://streak-stats.demolab.com/?user=ndelecrodev&theme=tokyonight&hide_border=true&card_width=880" alt="Sequência de contribuições"/>
 </p>
 
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=ndelecrodev&label=Visitas&color=2f6feb&style=flat-square" alt="Visitas ao perfil"/>&nbsp;
+  <img src="https://img.shields.io/github/followers/ndelecrodev?label=Seguidores&color=2f6feb&style=flat-square" alt="Seguidores no GitHub"/>
+</p>
+
 ## Projetos
 
 | Projeto | Descrição | Tecnologias |
@@ -38,13 +43,13 @@
 
 ## Stack
 
-**Linguagens**<br>
+#### Linguagens
 <img src="https://skillicons.dev/icons?i=python,java,js,html,css&theme=dark" alt="Python, Java, JavaScript, HTML e CSS"/>
 
-**Frameworks e banco de dados**<br>
+#### Frameworks e banco de dados
 <img src="https://skillicons.dev/icons?i=fastapi,django,spring,postgres&theme=dark" alt="FastAPI, Django, Spring Boot e PostgreSQL"/>
 
-**Ferramentas e entrega**<br>
+#### Ferramentas e entrega
 <img src="https://skillicons.dev/icons?i=git,github,githubactions,cloudflare&theme=dark" alt="Git, GitHub, GitHub Actions e Cloudflare"/>
 
 <sub>Também: Pydantic, SQLAlchemy, pytest, Poetry, MkDocs, Codecov, Sentry, Better Stack, Backblaze B2, Power Automate e Excel.</sub>
