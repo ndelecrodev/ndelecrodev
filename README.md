@@ -1,4 +1,4 @@
-<h1 align="center">Oi, eu sou o Nicolas 👋</h1>
+<h1 align="center">Hi, I'm Nicolas <img src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Hi.gif" width="30px" height="30px" alt="Acenando"></h1>
 
 <p align="center">
   Estudante do Ensino Médio no <b>Instituto J&F</b> (São Paulo, SP), apaixonado por <b>Python</b>, integração de sistemas e backend.<br>
