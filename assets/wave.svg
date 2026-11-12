@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" role="img" aria-label="Mão acenando">
+  <style>
+    .hand { font-size: 22px; transform-origin: 70% 80%; animation: wave 2.4s ease-in-out infinite; }
+    @keyframes wave {
+      0%, 60%, 100% { transform: rotate(0deg); }
+      10% { transform: rotate(16deg); }
+      20% { transform: rotate(-8deg); }
+      30% { transform: rotate(16deg); }
+      40% { transform: rotate(-4deg); }
+      50% { transform: rotate(10deg); }
+    }
+    @media (prefers-reduced-motion: reduce) { .hand { animation: none; } }
+  </style>
+  <text class="hand" x="4" y="23">👋</text>
+</svg>

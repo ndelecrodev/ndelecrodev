@@ -1,4 +1,4 @@
-<h1 align="center">Hi, I'm Nicolas Delecrode Zampieri <img src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Hi.gif" width="30" height="30" alt="👋"></h1>
+<h1 align="center">Hi, I'm Nicolas Delecrode Zampieri <img src="https://raw.githubusercontent.com/ndelecrodev/ndelecrodev/main/assets/wave.svg" width="30" height="30" alt=""></h1>
 
 <p align="center"><b>Desenvolvedor de software</b> · São Paulo, SP</p>
 
@@ -38,7 +38,14 @@
 
 ## Stack
 
-<img src="https://skillicons.dev/icons?i=python,fastapi,django,java,spring,postgres,js,html,css,git,github,githubactions,cloudflare,maven,vscode&theme=dark&perline=15" alt="Tecnologias"/>
+**Linguagens**<br>
+<img src="https://skillicons.dev/icons?i=python,java,js,html,css&theme=dark" alt="Python, Java, JavaScript, HTML e CSS"/>
+
+**Frameworks e banco de dados**<br>
+<img src="https://skillicons.dev/icons?i=fastapi,django,spring,postgres&theme=dark" alt="FastAPI, Django, Spring Boot e PostgreSQL"/>
+
+**Ferramentas e entrega**<br>
+<img src="https://skillicons.dev/icons?i=git,github,githubactions,cloudflare&theme=dark" alt="Git, GitHub, GitHub Actions e Cloudflare"/>
 
 <sub>Também: Pydantic, SQLAlchemy, pytest, Poetry, MkDocs, Codecov, Sentry, Better Stack, Backblaze B2, Power Automate e Excel.</sub>
 
