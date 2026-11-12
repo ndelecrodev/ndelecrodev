@@ -72,6 +72,13 @@ Desenvolvo APIs, pipelines de integração e aplicações web com arquitetura em
   <img width="98%" src="https://streak-stats.demolab.com/?user=ndelecrodev&theme=tokyonight&hide_border=true&card_width=880" alt="Sequência de contribuições"/>
 </p>
 
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ndelecrodev/ndelecrodev/output/activity-dark.svg"/>
+    <img width="98%" src="https://raw.githubusercontent.com/ndelecrodev/ndelecrodev/output/activity.svg" alt="Gráfico de atividade dos últimos 90 dias"/>
+  </picture>
+</p>
+
 <br/>
 
 <!-- ═══════════════ CONQUISTAS ═══════════════ -->

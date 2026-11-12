@@ -1,4 +1,4 @@
-name: Campo minado
+name: Campo minado e atividade
 
 on:
   schedule:
@@ -8,6 +8,7 @@ on:
     branches: [main]
     paths:
       - scripts/minesweeper.py
+      - scripts/activity.py
       - .github/workflows/minesweeper.yml
 
 permissions:
@@ -20,10 +21,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Gerar campo minado
+      - name: Gerar campo minado e gráfico de atividade
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: python3 scripts/minesweeper.py "${{ github.repository_owner }}" dist
+        run: |
+          python3 scripts/minesweeper.py "${{ github.repository_owner }}" dist
+          python3 scripts/activity.py "${{ github.repository_owner }}" dist
 
       - name: Publicar na branch output
         uses: crazy-max/ghaction-github-pages@v3.1.0
