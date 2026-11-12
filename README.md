@@ -1,4 +1,4 @@
-<h1 align="center">Nicolas Delecrode Zampieri <img src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Hi.gif" width="30px" height="30px" alt="Acenando"></h1>
+<h1 align="center">Hi, I'm Nicolas Delecrode <img src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Hi.gif" width="30px" height="30px" alt="Acenando"></h1>
 
 <p align="center">
   Desenvolvedor de software · São Paulo, SP
