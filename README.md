@@ -1,4 +1,4 @@
-<h1 align="center">Hi, I'm Nicolas Delecrode Zampieri <img src="https://raw.githubusercontent.com/ndelecrodev/ndelecrodev/main/assets/wave.svg" width="34" height="34" alt=""></h1>
+<h1 align="center">Hi, I'm Nicolas Delecrode Zampieri <img src="https://raw.githubusercontent.com/ndelecrodev/ndelecrodev/main/assets/wave.svg" width="40" height="40" alt=""></h1>
 
 <p align="center"><b>Desenvolvedor de software</b> · São Paulo, SP</p>
 
