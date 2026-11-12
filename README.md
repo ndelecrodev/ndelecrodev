@@ -43,23 +43,26 @@
 
 ---
 
+## Conquistas
+
+<p align="center">
+  <a href="https://github.com/ndelecrodev?tab=achievements"><img src="https://github.githubassets.com/images/modules/profile/achievements/pull-shark-silver.png" width="90" alt="Pull Shark x3" title="Pull Shark x3"/></a>
+  <a href="https://github.com/ndelecrodev?tab=achievements"><img src="https://github.githubassets.com/images/modules/profile/achievements/pair-extraordinaire-default.png" width="90" alt="Pair Extraordinaire" title="Pair Extraordinaire"/></a>
+  <a href="https://github.com/ndelecrodev?tab=achievements"><img src="https://github.githubassets.com/images/modules/profile/achievements/quickdraw-default.png" width="90" alt="Quickdraw" title="Quickdraw"/></a>
+  <a href="https://github.com/ndelecrodev?tab=achievements"><img src="https://github.githubassets.com/images/modules/profile/achievements/yolo-default.png" width="90" alt="YOLO" title="YOLO"/></a>
+</p>
+
+---
+
 ## Atividade no GitHub
 
 <p align="center">
-  <img height="170" src="https://github-readme-stats.vercel.app/api?username=ndelecrodev&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true" alt="Estatísticas"/>
-  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ndelecrodev&layout=compact&langs_count=8&theme=tokyonight&hide_border=true" alt="Linguagens mais usadas"/>
+  <img height="170" src="https://github-readme-stats-eight-theta.vercel.app/api?username=ndelecrodev&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true" alt="Estatísticas"/>
+  <img height="170" src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=ndelecrodev&layout=compact&langs_count=8&theme=tokyonight&hide_border=true" alt="Linguagens mais usadas"/>
 </p>
 
 <p align="center">
   <img src="https://streak-stats.demolab.com/?user=ndelecrodev&theme=tokyonight&hide_border=true" alt="Sequência de contribuições"/>
-</p>
-
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=ndelecrodev&theme=tokyo-night&hide_border=true&area=true" alt="Gráfico de atividade"/>
-</p>
-
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=ndelecrodev&theme=onedark&no-frame=true&row=1&column=7" alt="Troféus"/>
 </p>
 
 ---
