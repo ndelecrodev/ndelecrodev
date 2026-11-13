@@ -13,6 +13,8 @@
   <img src="https://komarev.com/ghpvc/?username=ndelecrodev&label=Visitas&color=2f6feb&style=for-the-badge&labelColor=0d1117" alt="Visitas ao perfil"/>
 </p>
 
+<img src="https://raw.githubusercontent.com/ndelecrodev/ndelecrodev/main/assets/divider.svg" width="100%" height="6" alt=""/>
+
 <!-- ═══════════════ SOBRE ═══════════════ -->
 ## <img src="https://api.iconify.design/lucide/terminal.svg?color=%2358a6ff" height="24" align="top" alt=""/> Sobre
 
@@ -130,6 +132,8 @@ Desenvolvo APIs, pipelines de integração e aplicações web com arquitetura em
 </table>
 
 <br/>
+
+<img src="https://raw.githubusercontent.com/ndelecrodev/ndelecrodev/main/assets/divider.svg" width="100%" height="6" alt=""/>
 
 <!-- ═══════════════ RODAPÉ ═══════════════ -->
 <p align="center">
