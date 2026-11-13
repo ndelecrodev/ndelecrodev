@@ -61,13 +61,14 @@ Desenvolvo APIs, pipelines de integração e aplicações web com arquitetura em
 <br/>
 
 <!-- ═══════════════ NÚMEROS ═══════════════
-     Os cartões tocam a animação uma vez, quando a imagem carrega.
-     Largura igual nos três (card_width + width em %) para alinhar as bordas. -->
+     Cartão de números e linguagens gerado no próprio repositório (workflow), sem serviço de terceiros. -->
 ## <img src="https://api.iconify.design/lucide/chart-no-axes-column.svg?color=%2358a6ff" height="24" align="top" alt=""/> Em números
 
 <p align="center">
-  <img width="49%" align="top" src="https://github-readme-stats-eight-theta.vercel.app/api?username=ndelecrodev&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true&card_width=435" alt="Estatísticas do GitHub"/>
-  <img width="49%" align="top" src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=ndelecrodev&layout=compact&langs_count=8&theme=tokyonight&hide_border=true&card_width=435" alt="Linguagens mais usadas"/>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ndelecrodev/ndelecrodev/output/stats-dark.svg"/>
+    <img width="98%" src="https://raw.githubusercontent.com/ndelecrodev/ndelecrodev/output/stats.svg" alt="Números do GitHub e linguagens mais usadas"/>
+  </picture>
 </p>
 
 <p align="center">

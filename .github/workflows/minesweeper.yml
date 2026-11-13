@@ -1,4 +1,4 @@
-name: Campo minado e atividade
+name: Campo minado, atividade e números
 
 on:
   schedule:
@@ -9,6 +9,7 @@ on:
     paths:
       - scripts/minesweeper.py
       - scripts/activity.py
+      - scripts/stats.py
       - .github/workflows/minesweeper.yml
 
 permissions:
@@ -27,6 +28,7 @@ jobs:
         run: |
           python3 scripts/minesweeper.py "${{ github.repository_owner }}" dist
           python3 scripts/activity.py "${{ github.repository_owner }}" dist
+          python3 scripts/stats.py "${{ github.repository_owner }}" dist
 
       - name: Publicar na branch output
         uses: crazy-max/ghaction-github-pages@v3.1.0
