@@ -67,8 +67,8 @@ def pct(a, b):
 
 
 def desenhar(dados, t):
-    itens = [(dados["commits"], "commits no último ano"), (dados["prs"], "pull requests"), (dados["reviews"], "revisões de código"),
-             (dados["issues"], "issues abertas"), (dados["repos"], "repositórios"), (dados["stars"], "estrelas recebidas")]
+    itens = [(dados["commits"], "commits no último ano"), (dados["prs"], "PRs no último ano"), (dados["reviews"], "revisões no último ano"),
+             (dados["issues"], "issues no último ano"), (dados["repos"], "repositórios"), (dados["stars"], "estrelas recebidas")]
     colunas = ""
     for i, (v, nome) in enumerate(itens):
         x, y = 36 + (i % 2) * 190, 78 + (i // 2) * 62
@@ -89,7 +89,7 @@ def desenhar(dados, t):
                     f'<text x="{lx + 168}" y="{ly}" font-size="13" fill="{t["suave"]}" text-anchor="end">{pct(tam, total)}%</text>')
     letra, prog = nota(dados)
     R = 36; C = 2 * 3.14159 * R
-    anel = (f'<g transform="translate(386 118)"><circle r="{R}" fill="none" stroke="{t["trilho"]}" stroke-width="7"/>'
+    anel = (f'<g transform="translate(392 118)"><circle r="{R}" fill="none" stroke="{t["trilho"]}" stroke-width="7"/>'
             f'<circle class="ring" r="{R}" fill="none" stroke="{t["acento"]}" stroke-width="7" stroke-linecap="round" transform="rotate(-90)" '
             f'stroke-dasharray="{C * prog:.1f} {C:.1f}"/>'
             f'<text y="9" text-anchor="middle" font-size="26" font-weight="700" fill="{t["texto"]}">{letra}</text>'
@@ -103,7 +103,7 @@ def desenhar(dados, t):
             f'<text x="36" y="40" font-size="14" font-weight="600" fill="{t["acento"]}" letter-spacing="1.2">EM NÚMEROS</text>'
             f'<text x="470" y="40" font-size="14" font-weight="600" fill="{t["acento"]}" letter-spacing="1.2">LINGUAGENS MAIS USADAS</text>'
             f'<line x1="440" y1="24" x2="440" y2="{H - 24}" stroke="{t["linha"]}"/>{colunas}{anel}{barras}{legenda}'
-            f'<text x="470" y="{H - 24}" font-size="11" fill="{t["suave"]}">Por tamanho de código nos repositórios públicos</text></g></svg>')
+            f'<text x="470" y="{H - 24}" font-size="11" fill="{t["suave"]}">Por tamanho de código, repositórios da conta (sem organizações)</text></g></svg>')
 
 
 def main():
