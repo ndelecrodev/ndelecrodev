@@ -13,6 +13,8 @@ import json, os, sys, urllib.request
 W, H = 880, 250
 QUERY = """query($u:String!){user(login:$u){
   contributionsCollection{totalCommitContributions totalPullRequestContributions totalPullRequestReviewContributions totalIssueContributions}
+  followers{totalCount} pullRequests{totalCount} issues{totalCount}
+  owned: repositories(first:100, ownerAffiliations:[OWNER], isFork:false){nodes{stargazerCount}}
   repositories(first:100, ownerAffiliations:[OWNER,COLLABORATOR,ORGANIZATION_MEMBER], isFork:false, orderBy:{field:PUSHED_AT,direction:DESC}){
     totalCount nodes{stargazerCount languages(first:6, orderBy:{field:SIZE,direction:DESC}){edges{size node{name color}}}}}
 }}"""
@@ -26,7 +28,7 @@ TEMAS = {
 def buscar(user):
     token = os.environ.get("GH_TOKEN") or os.environ.get("GITHUB_TOKEN")
     if not token:
-        return dict(commits=212, prs=18, reviews=9, issues=4, repos=7, stars=3,
+        return dict(commits=212, prs=18, reviews=9, issues=4, repos=7, stars=3, followers=2, prs_total=18, issues_total=4,
                     langs=[("Python", "#3572A5", 52000), ("Java", "#b07219", 31000), ("JavaScript", "#f1e05a", 12000), ("HTML", "#e34c26", 6000), ("CSS", "#563d7c", 3000)])
     req = urllib.request.Request("https://api.github.com/graphql", json.dumps({"query": QUERY, "variables": {"u": user}}).encode(),
                                  {"Authorization": f"bearer {token}", "Content-Type": "application/json"})
@@ -40,7 +42,24 @@ def buscar(user):
             tot[nome] = (cor, antigo[1] + e["size"])
     langs = sorted(((k, v[0], v[1]) for k, v in tot.items()), key=lambda x: -x[2])
     return dict(commits=c["totalCommitContributions"], prs=c["totalPullRequestContributions"], reviews=c["totalPullRequestReviewContributions"], issues=c["totalIssueContributions"],
-                repos=d["repositories"]["totalCount"], stars=sum(n["stargazerCount"] for n in nodes), langs=langs)
+                repos=d["repositories"]["totalCount"], stars=sum(n["stargazerCount"] for n in d["owned"]["nodes"]),
+                followers=d["followers"]["totalCount"], prs_total=d["pullRequests"]["totalCount"], issues_total=d["issues"]["totalCount"], langs=langs)
+
+
+def nota(d):
+    """Nota de S a C, com a fórmula pública do github-readme-stats (commits do último ano)."""
+    exp = lambda x: 1 - 2 ** (-x)
+    logn = lambda x: x / (1 + x)
+    pesos = 2 + 3 + 1 + 1 + 4 + 1
+    rank = 1 - (2 * exp(d["commits"] / 250) + 3 * exp(d["prs_total"] / 50) + 1 * exp(d["issues_total"] / 25)
+                + 1 * exp(d["reviews"] / 2) + 4 * logn(d["stars"] / 50) + 1 * logn(d["followers"] / 10)) / pesos
+    niveis = ["S", "A+", "A", "A-", "B+", "B", "B-", "C+", "C"]
+    cortes = [1, 12.5, 25, 37.5, 50, 62.5, 75, 87.5, 100]
+    pct = rank * 100
+    for n, c in zip(niveis, cortes):
+        if pct <= c:
+            return n, max(0.04, 1 - pct / 100)
+    return "C", 0.04
 
 
 def pct(a, b):
@@ -68,15 +87,22 @@ def desenhar(dados, t):
         lx, ly = bx + (i % 2) * 190, 138 + (i // 2) * 26
         legenda += (f'<circle cx="{lx + 5}" cy="{ly - 4}" r="5" fill="{cor}"/><text x="{lx + 18}" y="{ly}" font-size="13" fill="{t["texto"]}">{nome}</text>'
                     f'<text x="{lx + 168}" y="{ly}" font-size="13" fill="{t["suave"]}" text-anchor="end">{pct(tam, total)}%</text>')
-    css = (".num{opacity:0;animation:ap .7s ease-out forwards}.seg{transform-box:fill-box;transform-origin:left;transform:scaleX(0);animation:cr .9s ease-out forwards}"
+    letra, prog = nota(dados)
+    R = 36; C = 2 * 3.14159 * R
+    anel = (f'<g transform="translate(386 118)"><circle r="{R}" fill="none" stroke="{t["trilho"]}" stroke-width="7"/>'
+            f'<circle class="ring" r="{R}" fill="none" stroke="{t["acento"]}" stroke-width="7" stroke-linecap="round" transform="rotate(-90)" '
+            f'stroke-dasharray="{C * prog:.1f} {C:.1f}"/>'
+            f'<text y="9" text-anchor="middle" font-size="26" font-weight="700" fill="{t["texto"]}">{letra}</text>'
+            f'<text y="58" text-anchor="middle" font-size="11" fill="{t["suave"]}" letter-spacing="1">NOTA</text></g>')
+    css = (".ring{animation:giro 1.2s ease-out both}@keyframes giro{from{stroke-dasharray:0 999}}.num{opacity:0;animation:ap .7s ease-out forwards}.seg{transform-box:fill-box;transform-origin:left;transform:scaleX(0);animation:cr .9s ease-out forwards}"
            "@keyframes ap{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}@keyframes cr{to{transform:scaleX(1)}}"
-           "@media (prefers-reduced-motion:reduce){.num{animation:none;opacity:1}.seg{animation:none;transform:none}}")
+           "@media (prefers-reduced-motion:reduce){.num{animation:none;opacity:1}.seg,.ring{animation:none;transform:none}}")
     return (f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="Números do GitHub e linguagens mais usadas">'
             f'<style>{css}</style><rect x=".5" y=".5" width="{W - 1}" height="{H - 1}" rx="10" fill="{t["bg"]}" stroke="{t["borda"]}"/>'
             f'<g font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif">'
             f'<text x="36" y="40" font-size="14" font-weight="600" fill="{t["acento"]}" letter-spacing="1.2">EM NÚMEROS</text>'
             f'<text x="470" y="40" font-size="14" font-weight="600" fill="{t["acento"]}" letter-spacing="1.2">LINGUAGENS MAIS USADAS</text>'
-            f'<line x1="440" y1="24" x2="440" y2="{H - 24}" stroke="{t["linha"]}"/>{colunas}{barras}{legenda}'
+            f'<line x1="440" y1="24" x2="440" y2="{H - 24}" stroke="{t["linha"]}"/>{colunas}{anel}{barras}{legenda}'
             f'<text x="470" y="{H - 24}" font-size="11" fill="{t["suave"]}">Por tamanho de código nos repositórios públicos</text></g></svg>')
 
 

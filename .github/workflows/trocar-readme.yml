@@ -1,0 +1,41 @@
+name: Trocar versão do README
+
+on:
+  workflow_dispatch:
+    inputs:
+      versao:
+        description: "Qual versão do README colocar na main?"
+        required: true
+        type: choice
+        options:
+          - atual
+          - vercel
+
+permissions:
+  contents: write
+
+jobs:
+  trocar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Copiar o README da branch escolhida
+        run: |
+          git fetch origin "perfil-${{ inputs.versao }}"
+          git checkout "origin/perfil-${{ inputs.versao }}" -- README.md
+
+      - name: Commit e push, se houver mudança
+        run: |
+          if git diff --cached --quiet; then
+            echo "A main já está com essa versão. Nada a fazer."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "README: usa a versão ${{ inputs.versao }}"
+          git push origin main
